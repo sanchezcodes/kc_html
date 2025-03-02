@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Coding Inventory - Inicio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <div class="logo-container">
+            <a href="home.html" class="logo">LOGO</a>
+          </div>
+          
+          <div class="main-nav">
+            <a href="home.html">Inicio</a>
+            <a href="#">Cursos</a>
+            <a href="#">Ayuda</a>
+            <a href="#">Perfil</a>
+          </div>
+          
+          <div class="search-box">
+            <input type="text" placeholder="Buscar">
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          
+          <div class="user-profile">
+            KC
+          </div>
+          
+          <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Checkbox para controlar el menú sin JavaScript -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+    <!-- Overlay para móvil -->
+    <label for="nav-toggle" class="overlay"></label>
+
+    <!-- Contenido principal con sidebar -->
+    <div class="container">
+      <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h3>Menú</h3>
+            <label for="nav-toggle" class="sidebar-close">
+              <i class="fas fa-times"></i>
+            </label>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Material
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Proveedores
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Departamentos
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Directorio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Formación
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Configuración
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+          <!-- Barra de acciones -->
+          <div class="action-bar">
+            <div class="filter-container">
+              <a href="detail.html" class="btn btn-primary">
+                Agregar
+              </a>
+            </div>
+          </div>
+
+          <!-- Tabla de equipos -->
+          <div class="table-responsive">
+            <table class="equipment-table">
+              <thead>
+                <tr>
+                  <th>Equipo</th>
+                  <th>Etiqueta</th>
+                  <th>Estado</th>
+                  <th>Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Equipo 1 -->
+                <tr class="equipment-row">
+                  <td>
+                    <div class="equipment-cell">
+                      <div class="equipment-image">
+                        <i class="fas fa-laptop"></i>
+                      </div>
+                      <div class="equipment-details">
+                        <div class="equipment-name">Portátil Lenovo Thinkpad</div>
+                        <div class="equipment-department">Dpto. Desarrollo</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>E020345</td>
+                  <td>En reparación</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="btn-table">Borrar</button>
+                      <a href="detail.html?id=1" class="btn-table">Editar</a>
+                    </div>
+                  </td>
+                </tr>
+                
+                <!-- Equipo 2 -->
+                <tr class="equipment-row">
+                  <td>
+                    <div class="equipment-cell">
+                      <div class="equipment-image">
+                        <i class="fas fa-laptop"></i>
+                      </div>
+                      <div class="equipment-details">
+                        <div class="equipment-name">Portátil Lenovo Thinkpad</div>
+                        <div class="equipment-department">Dpto. Desarrollo</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>E020345</td>
+                  <td>En stock</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="btn-table">Borrar</button>
+                      <a href="detail.html?id=2" class="btn-table">Editar</a>
+                    </div>
+                  </td>
+                </tr>
+                
+                <!-- Equipo 3 -->
+                <tr class="equipment-row">
+                  <td>
+                    <div class="equipment-cell">
+                      <div class="equipment-image">
+                        <i class="fas fa-laptop"></i>
+                      </div>
+                      <div class="equipment-details">
+                        <div class="equipment-name">Portátil Lenovo Thinkpad</div>
+                        <div class="equipment-department">Dpto. Desarrollo</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>E020345</td>
+                  <td>En stock</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="btn-table">Borrar</button>
+                      <a href="detail.html?id=3" class="btn-table">Editar</a>
+                    </div>
+                  </td>
+                </tr>
+                
+                <!-- Equipo 4 -->
+                <tr class="equipment-row">
+                  <td>
+                    <div class="equipment-cell">
+                      <div class="equipment-image">
+                        <i class="fas fa-laptop"></i>
+                      </div>
+                      <div class="equipment-details">
+                        <div class="equipment-name">Portátil Lenovo Thinkpad</div>
+                        <div class="equipment-department">Dpto. Desarrollo</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>E020345</td>
+                  <td>Mon</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="btn-table">Borrar</button>
+                      <a href="detail.html?id=4" class="btn-table">Editar</a>
+                    </div>
+                  </td>
+                </tr>
+                
+                <!-- Equipo 5 -->
+                <tr class="equipment-row">
+                  <td>
+                    <div class="equipment-cell">
+                      <div class="equipment-image">
+                        <i class="fas fa-laptop"></i>
+                      </div>
+                      <div class="equipment-details">
+                        <div class="equipment-name">Portátil Lenovo Thinkpad</div>
+                        <div class="equipment-department">Dpto. Desarrollo</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>E020345</td>
+                  <td>Tony</td>
+                  <td>
+                    <div class="action-buttons">
+                      <button class="btn-table">Borrar</button>
+                      <a href="detail.html?id=5" class="btn-table">Editar</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="copyright">
+            2023 KeepCoding.
+          </div>
+          <div class="footer-links">
+            <a href="#" class="footer-link">Privacidad</a>
+            <a href="#" class="footer-link">FAQs</a>
+            <a href="#" class="footer-link">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html> 

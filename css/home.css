@@ -1,0 +1,188 @@
+/* Estilos específicos para la página de inicio */
+
+/* Encabezado de la página */
+.page-header {
+  margin-bottom: var(--spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-primary);
+}
+
+.page-description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Barra de acciones */
+.action-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  gap: var(--spacing-sm);
+}
+
+.search-container {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: var(--spacing-sm);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-hint);
+}
+
+.search-input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-sm) calc(var(--spacing-lg) + var(--spacing-xs));
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-md);
+}
+
+.search-input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.filter-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+/* Tabla de equipos */
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: var(--spacing-lg);
+}
+
+.equipment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.equipment-table th {
+  background-color: var(--table-header-bg);
+  text-align: left;
+  padding: var(--spacing-sm);
+  border-bottom: var(--table-border);
+  font-weight: 600;
+}
+
+.equipment-table td {
+  padding: var(--spacing-sm);
+  border-bottom: var(--table-border);
+}
+
+.equipment-row {
+  transition: background-color var(--transition-fast);
+}
+
+.equipment-row:hover {
+  background-color: var(--table-row-hover);
+}
+
+.equipment-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-solid);
+}
+
+.equipment-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.equipment-name {
+  font-weight: bold;
+  margin-bottom: var(--spacing-xs);
+}
+
+.equipment-department {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.equipment-cell {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+@media (max-width: 576px) {
+  .action-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Paginación */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-lg);
+}
+
+.pagination-list {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-xs);
+}
+
+.pagination-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  color: var(--color-text-primary);
+  transition: var(--transition-fast);
+}
+
+.pagination-item a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.pagination-item.active a {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Media queries para diseño responsive */
+@media (min-width: 576px) {
+  .equipment-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .equipment-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+} 

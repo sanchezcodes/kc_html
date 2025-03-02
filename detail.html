@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis Coding Inventory - Detalle</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="home.html" class="logo">Luis Coding Inventory</a>
+          <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fas fa-bars"></i>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Checkbox para controlar el menú sin JavaScript -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+
+    <!-- Overlay para móvil -->
+    <label for="nav-toggle" class="overlay"></label>
+
+    <!-- Contenido principal con sidebar -->
+    <div class="container">
+      <div class="main-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sidebar-header">
+            <h3>Menú</h3>
+            <label for="nav-toggle" class="sidebar-close">
+              <i class="fas fa-times"></i>
+            </label>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="home.html" class="nav-link">
+                  <i class="fas fa-home"></i> Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="detail.html" class="nav-link active">
+                  <i class="fas fa-plus-circle"></i> Nuevo Equipo
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-chart-bar"></i> Estadísticas
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-cog"></i> Configuración
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-question-circle"></i> Ayuda
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+          <!-- Encabezado de página -->
+          <div class="page-header">
+            <div>
+              <h1 class="page-title">Nuevo Equipo</h1>
+              <p class="page-description">Completa el formulario para registrar un nuevo equipo.</p>
+            </div>
+            <div class="page-actions">
+              <a href="home.html" class="btn btn-outline">
+                <i class="fas fa-arrow-left"></i> Volver
+              </a>
+            </div>
+          </div>
+
+          <!-- Formulario de equipo -->
+          <form class="equipment-form" action="home.html" method="get">
+            <!-- Sección de información básica -->
+            <div class="form-section">
+              <h2 class="section-title">Información Básica</h2>
+              
+              <!-- Imagen fija -->
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="image-preview">
+                    <img src="img/placeholder.jpg" alt="Imagen del equipo">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentName" class="form-label">Nombre *</label>
+                    <input type="text" class="form-control" id="equipmentName" name="equipmentName" placeholder="Ej: Laptop HP Pavilion" required>
+                  </div>
+                </div>
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentTag" class="form-label">Etiqueta</label>
+                    <input type="text" class="form-control" id="equipmentTag" name="equipmentTag" placeholder="Ej: IT-LAP-001">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentSerial" class="form-label">Número de Serie</label>
+                    <input type="text" class="form-control" id="equipmentSerial" name="equipmentSerial" placeholder="Ej: SN12345678">
+                  </div>
+                </div>
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentBrand" class="form-label">Marca/Fabricante</label>
+                    <input type="text" class="form-control" id="equipmentBrand" name="equipmentBrand" placeholder="Ej: HP, Dell, Samsung">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sección de detalles adicionales -->
+            <div class="form-section">
+              <h2 class="section-title">Detalles Adicionales</h2>
+              <div class="form-row">
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentSupplier" class="form-label">Proveedor</label>
+                    <input type="text" class="form-control" id="equipmentSupplier" name="equipmentSupplier" placeholder="Ej: Distribuciones Tecnológicas S.L.">
+                  </div>
+                </div>
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentLocation" class="form-label">Ubicación</label>
+                    <input type="text" class="form-control" id="equipmentLocation" name="equipmentLocation" placeholder="Ej: Oficina Principal, Planta 2">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentDepartment" class="form-label">Departamento *</label>
+                    <select class="form-control" id="equipmentDepartment" name="equipmentDepartment" required>
+                      <option value="">Seleccionar departamento</option>
+                      <option value="it">Tecnología de la Información</option>
+                      <option value="marketing">Marketing</option>
+                      <option value="sales">Ventas</option>
+                      <option value="finance">Finanzas</option>
+                      <option value="hr">Recursos Humanos</option>
+                      <option value="operations">Operaciones</option>
+                      <option value="rd">Investigación y Desarrollo</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentAcquisitionDate" class="form-label">Fecha de Adquisición</label>
+                    <input type="date" class="form-control" id="equipmentAcquisitionDate" name="equipmentAcquisitionDate">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-row">
+                <div class="form-col form-col-6">
+                  <div class="form-group">
+                    <label for="equipmentCost" class="form-label">Precio/Coste</label>
+                    <div class="input-group">
+                      <input type="number" class="form-control" id="equipmentCost" name="equipmentCost" placeholder="Ej: 1200.00" step="0.01">
+                      <div class="input-group-append">
+                        <span class="input-group-text">€</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sección de notas y enlaces -->
+            <div class="form-section">
+              <h2 class="section-title">Notas y Enlaces</h2>
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label for="equipmentNotes" class="form-label">Notas</label>
+                    <textarea class="form-control textarea-control" id="equipmentNotes" name="equipmentNotes" placeholder="Información adicional sobre el equipo"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-group">
+                    <label for="equipmentLinks" class="form-label">Enlaces de Interés</label>
+                    <textarea class="form-control textarea-control" id="equipmentLinks" name="equipmentLinks" placeholder="Enlaces a manuales, documentación, garantía, etc."></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="form-actions">
+              <a href="home.html" class="btn btn-outline">Cancelar</a>
+              <button type="submit" class="btn btn-primary">Guardar Equipo</button>
+            </div>
+          </form>
+        </main>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="#" class="footer-link">Términos y Condiciones</a>
+            <a href="#" class="footer-link">Política de Privacidad</a>
+            <a href="#" class="footer-link">Contacto</a>
+          </div>
+          <div class="copyright">
+            &copy; 2023 Luis Coding Inventory. Todos los derechos reservados.
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html> 
